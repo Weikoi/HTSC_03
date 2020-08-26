@@ -21,6 +21,7 @@ class Inventory(object):
                 return product
         return None
 
+    # SRP 应用
     def search(self, product_spec):
         match_list = []
         for product in self.inventory_list:

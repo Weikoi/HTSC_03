@@ -9,6 +9,7 @@ class ProductSpec(object):
     def get_all_props(self):
         return self.prop_dict.items()
 
+    # SRP 应用
     def match(self, other_spec):
         for k, v in other_spec.get_all_props():
             if self.prop_dict[k] != other_spec.get_prop(k):
