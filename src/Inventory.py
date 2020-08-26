@@ -27,4 +27,6 @@ class Inventory(object):
         for product in self.inventory_list:
             if product.get_spec().match(product_spec):
                 match_list.append(product)
+        if not match_list:
+            print("抱歉没有您要的产品")
         return match_list

@@ -18,5 +18,13 @@ if __name__ == '__main__':
     inventory.add_inventory(Computer(2, computer_spec2))
     inventory.add_inventory(Computer(3, computer_spec3))
 
-    search_spec = ComputerSpec(computer_spec_dict1)
-    print(inventory.search(search_spec))
+    search_spec_dict1 = {"screen_size": "15", "CPU": "Intel_low"}
+    search_spec_dict2 = {"category":"game"}
+    search_spec1 = ComputerSpec(search_spec_dict1)
+    search_spec2 = ComputerSpec(search_spec_dict2)
+
+    print("第一次检索结果：")
+    print(inventory.search(search_spec1))
+    print()
+    print("第二次检索结果：")
+    print(inventory.search(search_spec2))

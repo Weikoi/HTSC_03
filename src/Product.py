@@ -16,8 +16,8 @@ class Product(object):
             kv_str += str(k)
             kv_str += ":"
             kv_str += str(v)
-            kv_str += " "
-        return "serial_num:" + str(self.serial_number) + " ===== " + kv_str
+            kv_str += "  "
+        return "  serial_num:" + str(self.serial_number) + " ===== " + kv_str
 
 
 class Computer(Product):
