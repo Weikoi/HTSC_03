@@ -5,9 +5,9 @@ from ProductSpec import *
 if __name__ == '__main__':
     computer_spec_dict1 = {"brand": "ASUS", "price": "0-3999", "category": "game", "screen_size": "<11",
                            "CPU": "Intel_low"}
-    computer_spec_dict2 = {"brand": "LENOVO", "price": "0-3999", "category": "light", "screen_size": "<11",
+    computer_spec_dict2 = {"brand": "LENOVO", "price": "0-3999", "category": "light", "screen_size": "11",
                            "CPU": "Intel_low"}
-    computer_spec_dict3 = {"brand": "ACER", "price": "0-3999", "category": "light", "screen_size": "<11",
+    computer_spec_dict3 = {"brand": "ACER", "price": "0-3999", "category": "light", "screen_size": "14",
                            "CPU": "Intel_low"}
     computer_spec1 = ComputerSpec(computer_spec_dict1)
     computer_spec2 = ComputerSpec(computer_spec_dict2)
